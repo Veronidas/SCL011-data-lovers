@@ -8,5 +8,8 @@
   "extends": "eslint:recommended",
   "globals": {
     "example": false
+  },
+  "rules": {
+    "no-console": "off",
   }
 }
