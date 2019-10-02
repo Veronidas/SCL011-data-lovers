@@ -1,0 +1,33 @@
+body {
+    font-family: "open sans";
+}
+
+img { 
+    width: 200px;
+    height: 180px;
+}
+button {
+    background: rgba(0,0,0,0.0);
+    border: 0px none rgba(0,0,0,0.0);
+}
+
+#showdata {
+    width: 200px;
+    height: 120px;
+}
+#az, #za {
+    background-color: white;
+    color: black;
+    border: 2px solid #4CAF50;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 20%;
+}
+
+#az:hover, #za:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+div {
+    border: 5px solid red;
+}

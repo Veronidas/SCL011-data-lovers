@@ -11,3 +11,33 @@ window.filter = {
   })
 }
 }
+window.sort = {
+  //establecemos la funcion con los parametros asignados
+  order: (allPokemon,sortOrder) =>{
+    //establecemos la condicion
+    const arrayValues = allPokemon
+    if (sortOrder==="az"){
+      // la constante sortChamp llama a la data 
+      const sortPokeA = arrayValues.sort((a,b)=>{
+        return a.name.localeCompare(b.name);
+      })
+      return sortPokeA;
+    }
+    else if (sortOrder==="za"){
+      const sortPokeZ = arrayValues.sort((a,b)=>{
+        return b.name.localeCompare(a.name);
+      })
+      return sortPokeZ;        
+    }
+  } 
+  }
+  
+  window.calc = {
+    egg: (allPokemon, egg ) => {
+      const valueData = parseFloat(allPokemon.length);
+      const pokemonByType = window.filter.egg(allPokemon, egg).length;
+      const resultado = parseFloat((pokemonByType * 100) / valueData);
+      return resultado; 
+    }
+  }
+  
