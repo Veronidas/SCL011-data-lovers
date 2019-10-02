@@ -1,33 +1,72 @@
 body {
     font-family: "open sans";
+    background: rgba(104, 101, 101, 0.925);
+    
 }
 
 img { 
-    width: 200px;
-    height: 180px;
+    width: 120px;
+    height: 100px;
 }
 button {
     background: rgba(0,0,0,0.0);
     border: 0px none rgba(0,0,0,0.0);
 }
 
-#showdata {
-    width: 200px;
-    height: 120px;
-}
-#az, #za {
-    background-color: white;
-    color: black;
-    border: 2px solid #4CAF50;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    border-radius: 20%;
-}
-
-#az:hover, #za:hover {
-    background-color: #4CAF50;
+button:hover, #az:hover, #za:hover {
+    background-color: rgba(240, 44, 77, 0.589); 
     color: white;
-  }
+}
 
-div {
-    border: 5px solid red;
+#az, #za {
+    float: right;
+    background-color: #FFCC00;
+    width: 40px;
+    height: 40px;
+    color: black;
+    border: 2px solid #2140F9;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 50%;
+    color:  #2140F9;
+    padding: 0px;
+    margin: 20px;
+}
+
+
+nav {
+    background: #f1f0f0;
+    border: 0 0 5px 0;
+    border-color: #dddadb;
+    border-bottom-style: solid;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+
+#root {
+    padding: 20px;
+    margin: 0px 10% 0px 10%;
+    border: 2px solid lightslategray;
+    background: #fff;
+    column-count: 3;
+    column-gap: 40px;
+    column-rule-style: solid;
+    column-rule-color: #dddadb;
+    text-align: center;
+}
+
+.cardContainer {
+    padding: 20px;
+    border: 3px solid #85CA7A;
+    border-radius:100px;
+    border-style: outset;
+    margin: 10px;
+}
+
+#calc {
+    text-align: center;
+    align-items: center;
+    margin-top: 100px;
+    padding: 5px;
+    color: aliceblue;
 }
