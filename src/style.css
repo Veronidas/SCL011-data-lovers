@@ -1,7 +1,8 @@
 body {
     font-family: "open sans";
-    background: rgba(104, 101, 101, 0.925);
-    
+    background: url(https://github.com/Veronidas/img/blob/master/descarga.png?raw=true) fixed;
+    background-size: cover;
+    margin: 0px;
 }
 
 img { 
@@ -18,55 +19,86 @@ button:hover, #az:hover, #za:hover {
     color: white;
 }
 
+button .logo {
+    width: 30%;
+    float: left;
+    padding-left: 30px;
+}
+
 #az, #za {
     float: right;
-    background-color: #FFCC00;
+    background-color: #ffffff;
     width: 40px;
     height: 40px;
     color: black;
-    border: 2px solid #2140F9;
+    border: 2px solid #FF1E45;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     border-radius: 50%;
-    color:  #2140F9;
+    color:  #FF1E45;
     padding: 0px;
     margin: 20px;
 }
 
 
 nav {
-    background: #f1f0f0;
-    border: 0 0 5px 0;
-    border-color: #dddadb;
-    border-bottom-style: solid;
-    position: fixed;
+    background: rgba(253, 253, 253, 0.849);
+    /* border-color: rgb(221, 210, 58); */
+    /* border-bottom-style: solid; */
     top: 0px;
     width: 100%;
+    position: fixed;
+    height: 12%;
+    padding: 0 15px 15px 15px;
+    border-bottom:1px solid #ffffff
 }
 
 #root {
     padding: 20px;
     margin: 0px 10% 0px 10%;
-    border: 2px solid lightslategray;
-    background: #fff;
-    column-count: 3;
-    column-gap: 40px;
-    column-rule-style: solid;
-    column-rule-color: #dddadb;
+    /* border-radius: 20px; */
+    /* border-style: double; */
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: #f1f1f17c; */
+    justify-content: space-evenly;
 }
 
-.cardContainer {
-    padding: 20px;
-    border: 3px solid #85CA7A;
-    border-radius:100px;
-    border-style: outset;
+
+#root > div {
+    background-color: #ffffff9a;
     margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 30px;
+    width: 20%;
+    height: 10%;
+    font-size: medium;
 }
+.cardContainer {
+    padding: 25px;
+    border: 3px solid rgb(68, 126, 51);
+    border-radius:10px;
+    border-style: solid;
+    margin: 0px;
+} 
 
 #calc {
     text-align: center;
     align-items: center;
     margin-top: 100px;
-    padding: 5px;
-    color: aliceblue;
+    padding: 0px;
+    font-size: 13px;
+    font-weight: bold;
+    color: rgb(66, 70, 65);
+    background: rgba(253, 253, 253, 0.548);
+    border-radius: 100px; 
+    height: 40%;
+}
+
+.pokeImage {
+    padding: 10px;
+    border: 1px solid #FF1E45;
+    border-radius: 100%;
+    background: white;
 }

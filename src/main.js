@@ -12,7 +12,7 @@ function cardCreation(allPokemon) {
         let pokeCards = document.createElement("div");
         let padreCards = document.getElementById("root");
         padreCards.appendChild(pokeCards);
-        pokeCards.innerHTML += `<div class="cardContainer"><div><img src="${element.img}"</div>
+        pokeCards.innerHTML += `<div class="cardContainer"><div"><img class="pokeImage" src="${element.img}"</div>
         <div>${element.name}</div>
         <div>${element.num}</div>
         <div>${element.type}</div>
