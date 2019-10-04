@@ -13,14 +13,35 @@ button {
     background: rgba(0,0,0,0.0);
     border: 0px none rgba(0,0,0,0.0);
 }
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
 
-button:hover, #az:hover, #za:hover {
-    background-color: rgba(240, 44, 77, 0.589); 
-    color: white;
+	40% {
+		-webkit-transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
+
+button:hover {
+    animation: bounce 1s;
+}
+
+#az:hover, #za:hover {
+    background: rgba(255, 30, 68, 0.534);
+    color:white;
+    animation: none;
 }
 
 button .logo {
-    width: 30%;
+    width: 50%;
     float: left;
     padding-left: 30px;
 }
@@ -101,4 +122,13 @@ nav {
     border: 1px solid #FF1E45;
     border-radius: 100%;
     background: white;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    background: rgba(253, 253, 253, 0.849);
+    bottom: 0px;
+    border-top:1px solid #ffffff;
+    position: fixed;
 }
